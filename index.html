@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Bloom & Blossom flower shop demo with a sample customer-support chatbot.">
+  <title>Bloom & Blossom | Flower Shop Demo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="Bloom and Blossom home">
+      <span class="brand-mark">✿</span><span>Bloom <em>&</em> Blossom</span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="#bouquets">Bouquets</a>
+      <a href="#about">Our Story</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="header-cta" href="#bouquets">Shop flowers <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> FLOWERS FOR EVERY FEELING</p>
+        <h1>A little bloom<br>goes a <i>long way.</i></h1>
+        <p class="hero-text">Thoughtfully arranged flowers for birthdays, celebrations, apologies, and all the little moments in between.</p>
+        <div class="hero-actions">
+          <a class="button button-dark" href="#bouquets">Explore bouquets <span>→</span></a>
+          <button class="text-button" id="open-chat-top" type="button">Ask our flower assistant <span>↗</span></button>
+        </div>
+        <div class="hero-note"><span class="tiny-flower">✿</span><span>Made with care. Delivered with love.</span></div>
+      </div>
+      <div class="hero-art" role="img" aria-label="Illustration of a vase filled with colorful flowers">
+        <div class="art-sun"></div>
+        <div class="art-label">A FRESH<br>START</div>
+        <div class="flower flower-one">✿</div>
+        <div class="flower flower-two">✿</div>
+        <div class="flower flower-three">✿</div>
+        <div class="flower flower-four">✿</div>
+        <div class="stem stem-one"></div><div class="stem stem-two"></div><div class="stem stem-three"></div>
+        <div class="leaf leaf-one"></div><div class="leaf leaf-two"></div><div class="leaf leaf-three"></div>
+        <div class="vase"><span>BB</span></div>
+        <div class="art-caption">Seasonal stems, <i>always.</i></div>
+      </div>
+    </section>
+
+    <section class="benefits" aria-label="Our promises">
+      <div><span>✳</span><p><strong>Fresh-picked feeling</strong><small>Thoughtful floral designs</small></p></div>
+      <div><span>♡</span><p><strong>Made for your moment</strong><small>Gifts with meaning</small></p></div>
+      <div><span>↗</span><p><strong>Here to help</strong><small>Ask our flower assistant</small></p></div>
+    </section>
+
+    <section class="bouquets section-wrap" id="bouquets">
+      <div class="section-heading">
+        <div><p class="eyebrow">THE FLOWER EDIT</p><h2>Find your <i>kind of bloom.</i></h2></div>
+        <p>Not sure what to choose? Our flower assistant can help you find a bouquet for the right moment.</p>
+      </div>
+      <div class="product-grid">
+        <article class="product-card">
+          <div class="product-visual roses"><span>✿</span><span>✿</span><span>✿</span><span>✿</span><b>01</b></div>
+          <div class="product-info"><div><h3>Rosy Romance</h3><p>Pink roses & soft greens</p></div><strong>₦18,000</strong></div>
+          <button class="product-question" data-question="Tell me about Rosy Romance">Ask about this bouquet ↗</button>
+        </article>
+        <article class="product-card">
+          <div class="product-visual sunshine"><span>✿</span><span>✿</span><span>✿</span><span>✿</span><b>02</b></div>
+          <div class="product-info"><div><h3>Sunshine Days</h3><p>Sunny yellow seasonal blooms</p></div><strong>₦15,000</strong></div>
+          <button class="product-question" data-question="Tell me about Sunshine Days">Ask about this bouquet ↗</button>
+        </article>
+        <article class="product-card">
+          <div class="product-visual wildflower"><span>✿</span><span>✿</span><span>✿</span><span>✿</span><b>03</b></div>
+          <div class="product-info"><div><h3>Wildflower Wishes</h3><p>A playful seasonal mix</p></div><strong>₦12,500</strong></div>
+          <button class="product-question" data-question="Tell me about Wildflower Wishes">Ask about this bouquet ↗</button>
+        </article>
+      </div>
+      <p class="demo-note">Portfolio demo: bouquet names, prices, and shop details are sample content and can be edited.</p>
+    </section>
+
+    <section class="about" id="about">
+      <div class="about-stamp">GROWN<br>WITH<br>LOVE ✿</div>
+      <div><p class="eyebrow">A NOTE FROM OUR SHOP</p><h2>Small gestures.<br><i>Beautifully said.</i></h2></div>
+      <p>At Bloom & Blossom, we believe flowers can say what words sometimes cannot. This demo shop is designed to show how a simple AI-style assistant can help customers discover bouquets and get quick answers.</p>
+    </section>
+  </main>
+
+  <footer id="contact"><a class="brand" href="#"><span class="brand-mark">✿</span><span>Bloom <em>&</em> Blossom</span></a><p>Flower shop chatbot demonstration · Built for an AI chatbot portfolio project</p><a href="mailto:hello@example.com">hello@example.com</a></footer>
+
+  <button class="chat-launcher" id="chat-launcher" aria-label="Open flower shop assistant" type="button"><span class="chat-icon">✿</span><span class="launcher-copy"><strong>Flower Assistant</strong><small>How can I help you today?</small></span><span class="launcher-arrow">↗</span></button>
+
+  <section class="chat-panel" id="chat-panel" aria-label="Flower shop chatbot" aria-hidden="true">
+    <div class="chat-head">
+      <div class="bot-avatar">✿</div>
+      <div class="chat-head-copy"><strong>Bloom Assistant</strong><span><i></i> Online · Demo mode</span></div>
+      <button id="close-chat" class="close-chat" aria-label="Close chat" type="button">×</button>
+    </div>
+    <div class="chat-messages" id="chat-messages" aria-live="polite">
+      <div class="message bot-message"><span class="message-avatar">✿</span><div class="bubble">Hello, flower friend! 🌷 Welcome to Bloom & Blossom. I can help you choose a bouquet, check sample prices, learn about delivery, or care for your flowers.</div></div>
+      <div class="suggestions">
+        <button type="button" data-question="What bouquets do you have?">View bouquets</button>
+        <button type="button" data-question="How much do your flowers cost?">Prices</button>
+        <button type="button" data-question="Do you offer delivery?">Delivery</button>
+        <button type="button" data-question="How do I care for fresh flowers?">Flower care</button>
+      </div>
+    </div>
+    <form class="chat-input-row" id="chat-form">
+      <label class="sr-only" for="chat-input">Type your message</label>
+      <input id="chat-input" type="text" placeholder="Ask me anything about flowers…" autocomplete="off" maxlength="400">
+      <button type="submit" aria-label="Send message">↑</button>
+    </form>
+    <div class="chat-disclaimer">Sample responses · Not connected to IBM watsonx Assistant</div>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>
